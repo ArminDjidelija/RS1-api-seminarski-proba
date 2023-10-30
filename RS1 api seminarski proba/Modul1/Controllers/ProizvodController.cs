@@ -20,7 +20,7 @@ namespace RS1_api_seminarski_proba.Modul1.Views
         public ActionResult GetAll(string? filter)
         {
             var data = _dbContext.Proizvod
-                .OrderBy(s => s.Id)
+                .OrderBy(s => s.Naziv)
                 .Where(s => filter == null || s.Naziv.ToLower().Contains(filter.ToLower()))
                 .Select(s => new ProizvodGetRequest()
                 {
