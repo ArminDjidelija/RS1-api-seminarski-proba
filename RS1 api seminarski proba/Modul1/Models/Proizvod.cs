@@ -13,6 +13,7 @@ namespace RS1_api_seminarski_proba.Modul1.Models
         public float PocetnaCijena { get; set; }
         public string Opis { get; set; }
         public int BrojKlikova { get; set; } = 0;
+
         public int BrendID { get; set; }
         [ForeignKey(nameof(BrendID))]
         public Brend Brend { get; set; }

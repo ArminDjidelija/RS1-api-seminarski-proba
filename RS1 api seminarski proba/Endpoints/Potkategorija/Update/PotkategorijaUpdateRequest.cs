@@ -1,0 +1,9 @@
+﻿namespace RS1_api_seminarski_proba.Endpoints.Potkategorija.Update
+{
+    public class PotkategorijaUpdateRequest
+    {
+        public int Id { get; set; }
+        public string Naziv { get; set; }
+        public int KategorijaID { get; set; }
+    }
+}

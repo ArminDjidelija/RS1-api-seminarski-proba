@@ -6,8 +6,8 @@ using RS1_api_seminarski_proba.Modul1.ViewModels;
 
 namespace RS1_api_seminarski_proba.Modul1.Controllers.Kategorije
 {
-    [ApiController]
-    [Route("[controller]/[action]")]
+    //[ApiController]
+    //[Route("[controller]/[action]")]
     public class KategorijaController : ControllerBase
     {
         private readonly ApplicationDbContext _dbContext;
